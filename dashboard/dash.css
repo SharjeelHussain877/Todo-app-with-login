@@ -1,0 +1,437 @@
+/* 
+font-family: 'Bricolage Grotesque', sans-serif;
+font-family: 'Cinzel Decorative', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Qwitcher Grypen', cursive;
+font-family: 'Raleway', sans-serif;
+font-family: 'Urbanist', sans-serif;
+ */
+ .header {
+    background-color: #FF7058;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    color: white;
+    padding-bottom: 4vh;
+  }
+  .icon {
+    margin: 10px 0px;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+  }
+  .header-title {
+    margin-top: 10px;
+    line-height: 50px;
+  }
+  .logout {
+    display: flex;
+    justify-content: end;
+    position: relative;
+    top: 20px;
+    left: -10px;
+  }
+  .custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+      7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    outline: none;
+  }
+  .btn-3 {
+    background: #FFD05B;
+    background: linear-gradient(
+      0deg,
+      #FFD05B 0%,
+      #FFD05B 100%
+    );
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+  }
+  .btn-3 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .btn-3:before,
+  .btn-3:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: #FFD05B;
+    transition: all 0.3s ease;
+  }
+  .btn-3:before {
+    height: 0%;
+    width: 2px;
+  }
+  .btn-3:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn-3:hover {
+    background: #fff;
+    color: black;
+    box-shadow: none;
+  }
+  .btn-3:hover:before {
+    height: 100%;
+  }
+  .btn-3:hover:after {
+    width: 100%;
+  }
+  .btn-3 span:hover {
+    color: #FFD05B;
+  }
+  .btn-3 span:before,
+  .btn-3 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: #FFD05B;
+    transition: all 0.3s ease;
+  }
+  .btn-3 span:before {
+    width: 2px;
+    height: 0%;
+  }
+  .btn-3 span:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn-3 span:hover:before {
+    height: 100%;
+  }
+  .btn-3 span:hover:after {
+    width: 100%;
+  }
+  
+  @media (max-width: 576px) {
+    .header-title {
+      font-size: 18px;
+      margin-top: 70px;
+      margin-left: 2vh;
+      line-height: 30px;
+    }
+    .header {
+      padding-bottom: 0vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .icon {
+      height: 80px;
+      width: 80px;
+    }
+    .logout {
+      position: fixed;
+      left: 60%;
+      height: 7vh;
+      display: flex;
+      align-items: center;
+    }
+  }
+  
+  .app {
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+    border: 5px solid #FFD05B;
+    border-radius: 8px;
+    padding: 15px;
+  }
+  
+  .app::-webkit-scrollbar {
+    width: 0 !important;
+  }
+  
+  #addNew {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffd15b91;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .fa-plus {
+    background-color: #FFD05B;
+    padding: 3px;
+    border-radius: 3px;
+  }
+  
+  #tasks {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  
+  #tasks div {
+    border: 3px solid #ffc32b;
+    background-color: #ffd15bb7;
+    border-radius: 6px;
+    padding: 5px;
+    display: grid;
+    gap: 4px;
+  }
+  
+  #tasks div .options {
+    justify-self: center;
+    display: flex;
+    gap: 20px;
+  }
+  
+  #tasks div .options i {
+    cursor: pointer;
+  }
+  
+  #msg {
+    color: red;
+  }
+  
+  
+  /* Rabi Ul awwal ki khushi mai aesa button hai  */
+  /* Clear all button  */
+  @import url("https://fonts.googleapis.com/css?family=Raleway");
+  
+  :root {
+    --glow-color: green;
+  }
+  
+  /* *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+  } */
+  .clear {
+    margin-top: 15px;
+    display:flex;
+    justify-content: flex-end;
+  }
+  .glowing-btn {
+    position: relative;
+    color: var(--glow-color);
+    cursor: pointer;
+    padding: 0.35em 1em;
+    border: 0.15em solid var(--glow-color);
+    border-radius: 0.45em;
+    background: none;
+    perspective: 2em;
+    font-family: "Raleway", sans-serif;
+    font-size: 1em;
+    font-weight: 900;
+    letter-spacing: 1em;
+  
+    -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+      0px 0px 0.5em 0px var(--glow-color);
+    -moz-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+      0px 0px 0.5em 0px var(--glow-color);
+    box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+      0px 0px 0.5em 0px var(--glow-color);
+    animation: border-flicker 2s linear infinite;
+  }
+  
+  .glowing-txt {
+    float: left;
+    margin-right: -0.8em;
+    -webkit-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
+      0 0 0.45em var(--glow-color);
+    -moz-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
+      0 0 0.45em var(--glow-color);
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--glow-color);
+    animation: text-flicker 3s linear infinite;
+  }
+  
+  .faulty-letter {
+    opacity: 0.5;
+    animation: faulty-flicker 2s linear infinite;
+  }
+  
+  .glowing-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.7;
+    filter: blur(1em);
+    transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
+    background: var(--glow-color);
+    pointer-events: none;
+  }
+  
+  .glowing-btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: -1;
+    background-color: var(--glow-color);
+    box-shadow: 0 0 2em 0.2em var(--glow-color);
+    transition: opacity 100ms linear;
+  }
+  
+  .glowing-btn:hover {
+    color: white;
+    text-shadow: none;
+    animation: none;
+  }
+  
+  .glowing-btn:hover .glowing-txt {
+    animation: none;
+  }
+  
+  .glowing-btn:hover .faulty-letter {
+    animation: none;
+    text-shadow: none;
+    opacity: 1;
+  }
+  
+  .glowing-btn:hover:before {
+    filter: blur(1.5em);
+    opacity: 1;
+  }
+  
+  .glowing-btn:hover:after {
+    opacity: 1;
+  }
+  
+  @keyframes faulty-flicker {
+    0% {
+      opacity: 0.1;
+    }
+    2% {
+      opacity: 0.1;
+    }
+    4% {
+      opacity: 0.5;
+    }
+    19% {
+      opacity: 0.5;
+    }
+    21% {
+      opacity: 0.1;
+    }
+    23% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 0.5;
+    }
+    83% {
+      opacity: 0.4;
+    }
+  
+    87% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes text-flicker {
+    0% {
+      opacity: 0.1;
+    }
+  
+    2% {
+      opacity: 1;
+    }
+  
+    8% {
+      opacity: 0.1;
+    }
+  
+    9% {
+      opacity: 1;
+    }
+  
+    12% {
+      opacity: 0.1;
+    }
+    20% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 0.3;
+    }
+    30% {
+      opacity: 1;
+    }
+  
+    70% {
+      opacity: 0.7;
+    }
+    72% {
+      opacity: 0.2;
+    }
+  
+    77% {
+      opacity: 0.9;
+    }
+    100% {
+      opacity: 0.9;
+    }
+  }
+  
+  @keyframes border-flicker {
+    0% {
+      opacity: 0.1;
+    }
+    2% {
+      opacity: 1;
+    }
+    4% {
+      opacity: 0.1;
+    }
+  
+    8% {
+      opacity: 1;
+    }
+    70% {
+      opacity: 0.7;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .glowing-btn{
+      font-size: 1em;
+    }
+  }
+  

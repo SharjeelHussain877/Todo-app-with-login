@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Expenese - Log in or sign up</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="container">
+    <div class="wrapper-1">
+
+    </div>
+    <div class="wrapper">
+      <div class="title-text">
+        <div class="title login">
+          Login Form
+        </div>
+        <div class="title signup">
+          Signup Form
+        </div>
+      </div>
+      <div class="form-container">
+        <div class="slide-controls">
+          <input type="radio" name="slide" id="login" checked>
+          <input type="radio" name="slide" id="signup">
+          <label for="login" class="slide login">Login</label>
+          <label for="signup" class="slide signup">Signup</label>
+          <div class="slider-tab"></div>
+        </div>
+        <div class="form-inner">
+          <form class="login">
+            <div class="field">
+              <input id="login-email" type="text" placeholder="Email Address">
+            </div>
+            <div class="field">
+              <input id="login-password" type="password" placeholder="Password">
+            </div>
+            <!-- <div class="pass-link">
+              <a href="#">Forgot password?</a>
+            </div> -->
+            <div class="field btn">
+              <div class="btn-layer"></div>
+              <input onclick="logIn(event)" type="submit" value="Login">
+            </div>
+            <div class="signup-link">
+              Not a member? <a href="">Signup now</a>
+            </div>
+          </form>
+          <form action="#" class="signup">
+            <div class="field">
+              <input id="user-name" type="text" placeholder="Username">
+           </div>
+            <div class="field">
+              <input id="user-email" type="text" placeholder="Email Address">
+            </div>
+            <div class="field">
+              <input id="user-password" type="password" placeholder="Password">
+            </div>
+            <div class="field">
+              <input id="confirm-password" type="password" placeholder="Confirm password">
+            </div>
+            <div class="field btn">
+              <div class="btn-layer"></div>
+              <input onclick="signUp()" type="submit" value="Signup">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="./app.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+
+</html>
